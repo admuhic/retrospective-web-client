@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <well-box></well-box>
-      <less-good-box></less-good-box>
+      <less-well-box></less-well-box>
       <improve-box></improve-box>
     </div>
   </div>
@@ -10,14 +10,14 @@
 
 <script>
 import WellBox from "./WellBox.vue";
-import LessGoodBox from "./LessGoodBox.vue";
+import LessWellBox from "./LessWellBox.vue";
 import ImproveBox from "./ImproveBox.vue";
 
 export default {
   name: "BoxContainer",
   components: {
     "well-box": WellBox,
-    "less-good-box": LessGoodBox,
+    "less-well-box": LessWellBox,
     "improve-box": ImproveBox,
   },
   data() {

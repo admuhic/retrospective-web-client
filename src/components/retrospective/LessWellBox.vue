@@ -1,14 +1,9 @@
 <template>
   <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-    <div class="card">
-      <div class="card-body">
+    <div class="card outer-card-height">
+      <div class="card-body d-flex flex-column">
         <h5 class="card-title">What went less well?</h5>
-        <ul>
-          <li>
-            <p class="card-text">Something needs to be written here...</p>
-          </li>
-        </ul>
-        <a href="#" class="btn btn-new-post text-white">New post</a>
+        <button class="btn btn-new-post text-white mt-auto">New post</button>
       </div>
     </div>
   </div>
@@ -16,7 +11,7 @@
 
 <script>
 export default {
-  name: "LessGoodBox",
+  name: "LessWellBox",
   components: {},
   data() {
     return {};
