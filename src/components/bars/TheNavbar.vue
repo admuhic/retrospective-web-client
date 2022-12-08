@@ -15,13 +15,24 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link text-white" href="/retrospective"
               >Retrospective stuff</a
             >
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link text-white" href="/settings">Settings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/sign-in">Sign in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" role="button" @click="signOut()"
+              >Sign Out</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/register">Register</a>
           </li>
         </ul>
       </div>
@@ -30,10 +41,17 @@
 </template>
 
 <script>
+import { signOutUser } from "../../services/firebase.service";
+
 export default {
   name: "TheNavbar",
   data() {
     return {};
+  },
+  methods: {
+    signOut() {
+      signOutUser();
+    },
   },
 };
 </script>
